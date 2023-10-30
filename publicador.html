@@ -12,21 +12,21 @@
         <form action="https://api.sheetmonkey.io/form/6bLPeSBteShHf8rpKq9NJ8" method="post">
             <label>Nome e Sobrenome:</label>
             <input type="text" name="Nome">
-            <label>Publicações:</label>
-            <input type="number" name="publicacoes">
-            <label>Vídeos:</label>
-            <input type="number" name="Videos">
-            <label>Horas:</label>
-            <input type="number" name="Horas">
-            <label>Revisitas</label>
-            <input type="number" name="Revisitas">
+
+            <label for="campo_pergunta">Você trabalhou no serviço de campo este mês?:</label>
+            <select id="campo" name="campo">
+                <option value="nao_respondido">---</option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+
             <label>Estudos:</label>
             <input type="number" name="Estudos">
             <label for="observacao">Observação:</label>
             <textarea id="observacao" name="comentario" rows="4" cols="50" placeholder="Digite sua observação"></textarea>
 
             <input type="submit" value="Enviar">
-            <a href="index.html">Voltar</a>
+            <a href="main.html">Voltar</a>
         </form>
     </div>
 </html>
