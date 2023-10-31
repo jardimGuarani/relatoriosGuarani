@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-
-    </head>
-    <div class="bloco-principal ">
-        <form action="https://api.sheetmonkey.io/form/6bLPeSBteShHf8rpKq9NJ8" method="post">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bloco-principal">
+        <form action="https://api.sheetmonkey.io/form/6bLPeSBteShHf8rpKq9NJ8" method="post" onsubmit="return validarFormulario()">
             <label>Nome e Sobrenome:</label>
-            <input type="text" name="Nome">
+            <input type="text" name="Nome" id="nome">
 
             <label for="campo_pergunta">Você trabalhou no serviço de campo este mês?:</label>
             <select id="campo" name="campo">
@@ -26,7 +26,20 @@
             <textarea id="observacao" name="comentario" rows="4" cols="50" placeholder="Digite sua observação"></textarea>
 
             <input type="submit" value="Enviar">
-            <a href="index.html">Voltar</a>
+            <a href="main.html">Voltar</a>
         </form>
     </div>
+
+    <script>
+        function validarFormulario() {
+            var nome = document.getElementById('nome').value;
+
+            if (nome.trim() === '') {
+                alert("Por favor, preencha o campo Nome e Sobrenome.");
+                return false; // Impede o envio do formulário se o campo estiver vazio
+            }
+            return true; // Permite o envio do formulário se o campo estiver preenchido
+        }
+    </script>
+</body>
 </html>
