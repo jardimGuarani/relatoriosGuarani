@@ -3,21 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="bloco-principal">
-        <form action="https://api.sheetmonkey.io/form/gRb2F34mRWUCsWAjgjVAFi" method="post" onsubmit="return validarFormulario()">
+        <form action="https://script.google.com/macros/s/AKfycbzSWUJGUn2iTXfRUpZiL-kIAJbiafTmcOUu98Q2EeYE8ib_e-Cblt1Kqh_0GZhYYjCC/exec" 
+              method="post" 
+              onsubmit="return validarFormulario()">
+              
             <label>Nome e Sobrenome:</label>
             <input type="text" name="Nome" id="nome">
-            <label>Quantidade de horas:</label>
-            <input type="number" name="horas">
+
+            <label>Horas:</label>
+            <input type="number" name="Horas">
+
             <label>Estudos:</label>
             <input type="number" name="Estudos">
+            
             <label for="observacao">Observação:</label>
-            <textarea id="observacao" name="comentario" rows="4" cols="50" placeholder="Digite sua observação"></textarea>
+            <textarea id="observacao" name="Comentario" rows="4" cols="50" placeholder="Digite sua observação"></textarea>
 
             <input type="submit" value="Enviar">
             <a href="index.html">Voltar</a>
