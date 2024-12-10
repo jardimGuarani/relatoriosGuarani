@@ -1,22 +1,29 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="bloco-principal">
-        <form action="https://api.sheetmonkey.io/form/nUTAgacFQNiwbh91KP9Y9X" method="post" onsubmit="return validarFormulario()">
+        <form action="https://script.google.com/macros/s/AKfycbzpOq7zabSfYv_JzVpKaTUcC0fpgdcGSLnf4ed2_QJe86GtqMKAdHjNLOM020GVIb78/exec" 
+              method="post" 
+              onsubmit="return validarFormulario()">
+              
             <label>Nome e Sobrenome:</label>
             <input type="text" name="Nome" id="nome">
-            <label>Quantidade de horas:</label>
-            <input type="number" name="horas">
+
+            <label for="horas_pergunta">Horas:</label>
+            <input type="number" id="horas" name="Horas">
+
             <label>Estudos:</label>
             <input type="number" name="Estudos">
+            
             <label for="observacao">Observação:</label>
-            <textarea id="observacao" name="comentario" rows="4" cols="50" placeholder="Digite sua observação"></textarea>
+            <textarea id="observacao" name="Comentario" rows="4" cols="50" placeholder="Digite sua observação"></textarea>
 
             <input type="submit" value="Enviar">
             <a href="index.html">Voltar</a>
